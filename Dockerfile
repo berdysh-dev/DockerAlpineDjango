@@ -15,7 +15,7 @@ RUN apk upgrade
 RUN mkdir -p Django /usr/local/Django
 COPY Django /usr/local/Django
 
-RUN cd /usr/local/Django ; python manage.py migrate ; python manage.py runserver
+# RUN cd /usr/local/Django ; python manage.py migrate ; python manage.py runserver
 
 COPY entry.sh /usr/local/bin/entry.sh
 
