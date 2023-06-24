@@ -9,6 +9,7 @@ RUN adduser -u 1205 apache ; exit 0
 RUN adduser -u 1206 tomcat ; exit 0
 
 RUN apk update
+RUN apk add git bind-tools bash tcsh busybox busybox-extras build-base linux-headers alpine-sdk
 RUN apk add python3 python3-dev py3-pip py3-django
 RUN apk upgrade
 
